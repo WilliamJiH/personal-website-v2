@@ -30,10 +30,10 @@ const Navigator = () => {
       </div>
       <div className='Nav Nav-list'>
         <ul>
-          <li>HOME</li>
-          <li>BLOG</li>
-          <li>RESUME</li>
-          <li>PROJECTS</li>
+          <li onClick={() => console.log('Home')}>HOME</li>
+          <li onClick={() => console.log('BLOG')}>BLOG</li>
+          <li onClick={() => console.log('RESUME')}>RESUME</li>
+          <li onClick={() => console.log('PROJECTS')}>PROJECTS</li>
         </ul>
       </div>
       <div>

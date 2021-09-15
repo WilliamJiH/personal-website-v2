@@ -6,6 +6,8 @@
   justify-content: space-between;
   display: flex;
   flex-direction: column;
+  top: 0;
+  left: 0;
 }
 
 .profile {
@@ -45,6 +47,7 @@
 
 .Nav-list ul li {
   margin: 1em 0;
+  user-select: none;
 }
 
 .Nav-list ul li:hover {
