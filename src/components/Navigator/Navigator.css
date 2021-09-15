@@ -1,0 +1,83 @@
+.Navigator {
+  width: 20%;
+  border-right: 1px solid #e3f6f5;
+  height: 100vh;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile-header {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #272643;
+}
+
+.profile p {
+  margin: 0.5em;
+  font-size: 1.2rem;
+  color: #2c698d;
+}
+
+.profile img {
+  margin-top: 1em;
+  width: 60%;
+  border-radius: 50%;
+}
+
+.Nav {
+  color: #272643;
+}
+
+.Nav-list ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.Nav-list ul li {
+  margin: 1em 0;
+}
+
+.Nav-list ul li:hover {
+  color: #2c698d;
+}
+
+.Nav-list ul li:active {
+  color: #2c698d;
+}
+
+.Nav-footer {
+  border-top: 1px solid #e3f6f5;
+  position: relative;
+}
+
+.Nav-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.3em 1.5em;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Nav-footer ul li:hover {
+  color: #2c698d;
+}
+
+.Nav-footer ul a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.Copyright {
+  text-align: center;
+  padding: 1em 0;
+  border-top: 1px solid #e3f6f5;
+}
