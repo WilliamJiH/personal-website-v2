@@ -31,6 +31,7 @@ const Navigator = () => {
       <div className='Nav Nav-list'>
         <ul>
           <li>HOME</li>
+          <li>BLOG</li>
           <li>RESUME</li>
           <li>PROJECTS</li>
         </ul>
@@ -55,11 +56,9 @@ const Navigator = () => {
             >
               <FontAwesomeIcon icon={faGithub} fixedWidth />
             </li>
-            <a href=''>
-              <li>
-                <FontAwesomeIcon icon={faEnvelope} fixedWidth />
-              </li>
-            </a>
+            <li>
+              <FontAwesomeIcon icon={faEnvelope} fixedWidth />
+            </li>
           </ul>
         </div>
       </div>

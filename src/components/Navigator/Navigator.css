@@ -1,6 +1,7 @@
 .Navigator {
+  background: #f1e8e6;
   width: 20%;
-  border-right: 1px solid #e3f6f5;
+  border-right: 1px solid #edd2cb;
   height: 100vh;
   justify-content: space-between;
   display: flex;
@@ -9,6 +10,7 @@
 
 .profile {
   text-align: center;
+  height: 10em; /* Temporary fix */
 }
 
 .profile-header {
@@ -38,7 +40,7 @@
   padding: 0;
   text-align: center;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .Nav-list ul li {
@@ -54,7 +56,7 @@
 }
 
 .Nav-footer {
-  border-top: 1px solid #e3f6f5;
+  border-top: 1px solid #edd2cb;
   position: relative;
 }
 
@@ -71,13 +73,8 @@
   color: #2c698d;
 }
 
-.Nav-footer ul a {
-  color: inherit;
-  text-decoration: none;
-}
-
 .Copyright {
   text-align: center;
   padding: 1em 0;
-  border-top: 1px solid #e3f6f5;
+  border-top: 1px solid #edd2cb;
 }
