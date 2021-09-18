@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navigator.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -6,7 +6,16 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Typed from 'react-typed';
 import HHJ from '../../image/HHJ.png';
 
-const Navigator = () => {
+const Navigator = ({ setPageHandler }) => {
+  let resetPages = {
+    home_on: false,
+    blog_on: false,
+    resume_on: false,
+    projects_on: false,
+  };
+  const [isOn, setIsOn] = useState({ resetPages, home_on: true });
+  const { home_on, blog_on, resume_on, projects_on } = isOn;
+
   return (
     <section className='Navigator'>
       <div className='profile'>
@@ -30,10 +39,46 @@ const Navigator = () => {
       </div>
       <div className='Nav Nav-list'>
         <ul>
-          <li onClick={() => console.log('Home')}>HOME</li>
-          <li onClick={() => console.log('BLOG')}>BLOG</li>
-          <li onClick={() => console.log('RESUME')}>RESUME</li>
-          <li onClick={() => console.log('PROJECTS')}>PROJECTS</li>
+          <li
+            className={home_on ? 'current-active' : ''}
+            name='HOME'
+            onClick={(e) => {
+              setPageHandler(e);
+              setIsOn({ resetPages, home_on: true });
+            }}
+          >
+            HOME
+          </li>
+          <li
+            className={blog_on ? 'current-active' : ''}
+            name='BLOG'
+            onClick={(e) => {
+              setPageHandler(e);
+              setIsOn({ resetPages, blog_on: true });
+            }}
+          >
+            BLOG
+          </li>
+          <li
+            className={resume_on ? 'current-active' : ''}
+            name='RESUME'
+            onClick={(e) => {
+              setPageHandler(e);
+              setIsOn({ resetPages, resume_on: true });
+            }}
+          >
+            RESUME
+          </li>
+          <li
+            className={projects_on ? 'current-active' : ''}
+            name='PROJECTS'
+            onClick={(e) => {
+              setPageHandler(e);
+              setIsOn({ resetPages, projects_on: true });
+            }}
+          >
+            PROJECTS
+          </li>
         </ul>
       </div>
       <div>

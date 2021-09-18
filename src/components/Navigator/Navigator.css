@@ -50,11 +50,12 @@
   user-select: none;
 }
 
-.Nav-list ul li:hover {
+.Nav-list ul li:hover,
+.Nav-list ul li:focus {
   color: #2c698d;
 }
 
-.Nav-list ul li:active {
+.current-active {
   color: #2c698d;
 }
 
